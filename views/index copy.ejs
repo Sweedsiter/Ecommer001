@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My EJS</h1>
+    <p><%= name %></p>
+    <p><%- Address %></p>
+    <p><%= Array %></p>
+    <!-- แบบ if else -->
+    <% if(agg => 18){%>
+        <p>โตแล้ว</p>
+    <% }else{ %>
+        <p>ยังเด็ก</p>
+    <% }%>
+    <!-- แบบ loop for -->
+    <% for (i=1;i<=1;i++){%>
+        <p>ลำดับที่ <%= i %></p>
+    <% } %>    
+    
+    <% for(i=0; i < Array.length;i++){ %>
+        <p><%= Array[i] %></p>
+    <%}%>
+
+    <% for(index in Array){ %>
+        <p>ช่องที่ <%= Array[index] %></p>
+    <%}%>
+
+    <% Object.values(products).forEach(function(item){ %>
+        <p><%= item.context %></p>
+        <p><%= item.name %></p>
+        <img src="<%= item.img %>"/>
+        <hr/>
+        <%})%>
+       
+</body>
+</html>
