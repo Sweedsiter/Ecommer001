@@ -8,7 +8,9 @@
 const mongoose = require('mongoose')
 
 // เชีอมไปยัง Mongodb
-const dbUrl ='mongodb://localhost:27017/productDB2'
+const dbUrl ='mongodb+srv://d27saitunlu:cQ8ppx22JYaohtq1@cluster0.mtjpud0.mongodb.net/productDB2' 
+
+//d27saitunlu  cQ8ppx22JYaohtq1 mongodb+srv://d27saitunlu:<password>@cluster0.mtjpud0.mongodb.net/
 mongoose.connect(dbUrl,{
   useNewUrlParser: true,
   useCreateIndex: true,

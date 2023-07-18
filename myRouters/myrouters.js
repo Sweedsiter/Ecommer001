@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const multer = require('multer')
 const { MongoClient } = require("mongodb");
-const uri = "mongodb://localhost:27017/productDB2";
+const uri = "mongodb+srv://d27saitunlu:cQ8ppx22JYaohtq1@cluster0.mtjpud0.mongodb.net/productDB2";
 const client = new MongoClient(uri);
 	const DB = client.connect()
 
